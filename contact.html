@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Noto+Sans+TC:wght@100&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+
+    <!--style.css link-->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <title>Responsive Portfoilio</title>
+  </head>
+  <body>
+      <!--Nav begin-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">Bilal Ersoy</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link border-right" href="index.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link border-right"  href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Nav end-->
+
+    <form action="" class = "main-form needs-validation" novalidate>
+        <!--name and last name-->
+        <div class="row">
+            <div class="col-xs-2 col-sm-4 col-md-6 col-lg-8">
+                <div class="form-group">
+                    <label for="firstname">Name</label> 
+                    <input type="text" name="firstname" id="firstname" class="form-control" required>
+                    <div class="invalid-feedback">Re-enter name!</div>
+                </div>
+            </div>
+        </div>
+
+        <!--email-->
+        <div class="row">
+            <div class="col-xs-2 col-sm-4 col-md-6 col-lg-8">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required> 
+                    <div class="invalid-feedback">Re-enter email!</div>        
+                </div>
+            </div>
+        </div>
+
+        <!--Submit Button-->
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>  
+
+    <!--footer-->
+    <div class="sticky-bottom">
+        <footer>
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
+                        <h3>Check Out my Social Media!</h3>
+                        <ul>
+                          <li>
+                              <a class= "card-link" href="https://twitter.com/Bilal_Er13">Twitter</a>
+                          </li>
+                          <li>
+                              <a class="card-link" href="https://www.instagram.com/beersoy13/">Instagram</a>
+                          </li>
+                          <li>
+                              <a class="card-link" href="https://www.linkedin.com/in/bilal-ersoy-5613311b8/">Linkedin</a>
+                          </li>
+                          <li>
+                              <a class="card-link" href="https://github.com/bee-13">Github</a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer-bottom-text">&copy;Copyright</p>
+
+        </footer>
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!--Javasript for validation-->
+    <script>
+        var form = document.querySelector('.needs-validation');
+
+        form.addEventListener('submit', function(event) {
+            if(form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+
+            form.classList.add('was-validated');
+
+        } )
+    </script>
+  </body>
+</html>

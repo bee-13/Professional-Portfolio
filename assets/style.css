@@ -1,0 +1,85 @@
+
+body {
+    background-color: #eee;
+}
+
+.container {
+    margin: 20px;
+    background-color: white;
+    width: 80%
+}
+
+h3 {
+    color: #fff;
+}
+
+.footer-top {
+    background-color: #111;
+    padding:  80px 0;
+}
+
+.segment-one h3{
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+
+}
+
+.segment-one h3::before {
+    content: '|';
+    color: #c65039;
+    padding-right: 10px;
+}
+
+.segment-one ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.segment-one ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    line-height: 40px;
+}
+
+.segment-one ul li a {
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.footer-bottom-text {
+    text-align: center;
+    background: #000;
+    line-height: 75px;
+    color: white;
+}
+
+/*Portfolio page*/
+.img-cell { 
+    height: 250px;
+    width: 400px;
+}
+.img-comp {
+    height: 200px;
+    width: 300px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.main-form {
+    width: 80%;
+    margin: 30px
+}
+
+.profile-pic {
+    width: 400px;
+    height: auto;
+}
+
+@media screen and (max-width: 750px) {
+    .img-fluid {
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
+    
+}
